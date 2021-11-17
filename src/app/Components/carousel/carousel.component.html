@@ -1,0 +1,10 @@
+<p-carousel [value]="carousel1" [numVisible]="1" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+  
+    <ng-template let-item pTemplate="item">
+        <div>
+          <img [src]="item.image" width="700px" height="200px" alt="">
+        <!-- {{item|json}} -->
+        </div>
+    </ng-template>
+   
+  </p-carousel>

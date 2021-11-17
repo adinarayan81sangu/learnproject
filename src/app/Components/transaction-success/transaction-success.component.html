@@ -1,0 +1,5 @@
+<p-card *ngFor="let data of SuccessData"
+    [style]="{'width': '25rem', 'margin-bottom': '2em','border-radius':'20px','text-align':'center'}">
+    <p>{{data.label}}:</p>
+    <p class="success">{{data.value}}</p>
+</p-card>

@@ -1,0 +1,17 @@
+<p-card  id="p">
+    <form action="" class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="p-fluid">
+            <div class="p-field">
+                <label for="Username">Username</label>
+                <input id="username" formControlName="username" type="email" pInputText />
+            </div>
+            <div class="p-field">
+                <label for="password">Password</label>
+                <input id="password" formControlName="password" type="text" pInputText />
+            </div>
+            <div class="p-field">
+                <button class="btn" pButton pRipple type="submit" [disabled]="loginForm.invalid" label="Submit"></button>
+            </div>
+        </div>
+    </form>
+</p-card>
